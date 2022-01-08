@@ -1,0 +1,49 @@
+/* Theme colors */
+:root {
+  --bg: hsl(0, 0%, 100%);
+  --primary: hsl(192, 100%, 17%);
+  --secondary: hsl(193, 100%, 8%);
+  --accent: hsl(24, 100%, 50%);
+  --text: hsl(0, 0%, 0%);
+  --fade-text: rgba(39, 39, 39, 0.7);
+}
+
+.darkmode {
+  --bg: rgb(51, 34, 34);
+  --primary: hsl(192, 100%, 17%);
+  --secondary: hsl(193, 100%, 8%);
+  --accent: hsl(24, 100%, 50%);
+  --text: hsl(0, 0%, 100%);
+  --fade-text: rgba(200, 200, 200, 0.65);
+}
+
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  color: var(--text);
+  background-color: var(--bg);
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: var(--text);
+}
+
+.container {
+  max-width: 1440px;
+  padding: 0 2rem;
+  margin: 0 auto;
+
+  /* border: 2px solid salmon; */
+}
