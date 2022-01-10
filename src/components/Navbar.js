@@ -27,6 +27,7 @@ export default function Navbar() {
                 <div className='links'>
                     <li className="link"><Link to="/">Principal</Link></li>
                     <li className="link"><Link to="/techcare">A TechCare</Link></li>
+                    <li className="link"><Link to="/ourservices">Nossos Serviços</Link></li>
                     <li className="link"><span>Contato</span></li>
                 </div>
                 <div className="languages">
