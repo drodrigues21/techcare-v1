@@ -5,7 +5,9 @@
   --secondary: hsl(193, 100%, 8%);
   --accent: hsl(24, 100%, 50%);
   --text: hsl(0, 0%, 0%);
-  --fade-text: rgba(39, 39, 39, 0.7);
+  --light-text: hsl(0, 0%, 93%);
+  --fade-text: hsla(0, 0%, 15%, 0.7);
+  --element: hsl(0, 0%, 97%);
 }
 
 .darkmode {

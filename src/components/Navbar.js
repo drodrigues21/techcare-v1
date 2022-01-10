@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import '../styles/Navbar.css';
 import braFlag from '../assets/images/brazil-flag.png';
 import usaFlag from '../assets/images/usa-flag.png';
-import moon from '../assets/images/moon.svg';
+// import moon from '../assets/images/moon.svg';
 // import sun from '../assets/images/usa-flag.png';
 
 export default function Navbar() {
@@ -36,9 +36,9 @@ export default function Navbar() {
                     <div className="english">
                         <img src={usaFlag} alt="USA flag for english" />
                     </div>
-                    <div className="darkmode">
+                    {/* <div className="darkmode">
                         <img src={moon} alt="" />
-                    </div>
+                    </div> */}
                 </div>
             </ul>
         </nav>
