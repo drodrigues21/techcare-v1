@@ -1,0 +1,39 @@
+.app-stores-container {
+    margin-bottom: 3rem;
+}
+
+.app-stores-container h2 {
+    position: relative;
+    font-size: 1.65rem;
+    font-weight: 600;
+    line-height: 2rem;
+    text-align: center;
+    color: var(--fade-text);
+    padding: 0 0 1rem 0;
+    margin-bottom: 2rem;
+}
+
+.app-stores-container h2::before {
+    content: '';
+    width: 2.55rem;
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    background-color: var(--accent);
+    transform: translateX(-50%);
+}
+
+.app-stores-btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.store {
+    width: 12rem;
+}
+
+.apple-store img {
+    padding: 1.2rem;
+}
