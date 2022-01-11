@@ -8,7 +8,7 @@
     position: relative;
     padding: 1rem 0 .65rem;
     cursor: pointer;
-    z-index: 1000; 
+    z-index: 100; 
 }
 
 .hamburger {
@@ -16,7 +16,7 @@
     position: relative;
     width: 1rem;
     height: 2px;
-    z-index: 1000;
+    z-index: 100;
 }
 
 .hamburger::after {
@@ -57,7 +57,7 @@
     margin: 0;
     /* padding: 10rem 0 0 0; */
     border-left: 1px solid rgb(207, 207, 207);
-    z-index: 100;
+    z-index: 10;
 
     transform: translateX(110%);
     transition: transform 500ms cubic-bezier(.5, 0, .5, 1);
@@ -89,7 +89,7 @@
     padding: 1rem 0;
 }
 
-.links .link a, .links .link span {
+.links .link a {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -98,21 +98,16 @@
     color: var(--text);
 }
 
-.link span {
-    cursor: pointer;
-}
-
 /* Hover effect - navbar */
-.links .link a:hover, .links .link span:hover {
-    color: var(--hover-text);
+.links .link a:hover {
+    /* color: var(--hover-text); */
     border-bottom: 2px solid var(--accent);
 }
 
 
-.links .link a:focus, .links .link span:focus {
+.links .link a:focus {
     border-bottom: 2px solid var(--accent);
 }
-
 
 .languages {
     display: flex;
@@ -168,9 +163,9 @@
         padding: 0 3rem 0 0;
     }
 
-    .links .link a, .links .link span {
+    .links .link a {
         color: var(--light-text);
-        font-size: .7rem;
+        font-size: .75rem;
         font-weight: 600;
         text-transform: uppercase;
         padding-bottom: 2px;

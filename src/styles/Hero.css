@@ -70,10 +70,10 @@
     transition: all .5s ease-in-out;
 }
 
-.hero-btn span {
+.hero-btn a {
     visibility: visible;
     position: relative;
-    font-size: 12px;
+    font-size: 1rem;
     color: var(--secondary);
     transition: all .5s ease-in-out;
 }
@@ -100,7 +100,7 @@
     transition: all .5s ease-in-out;
 }
 
-.hero-btn.round-btn span {
+.hero-btn.round-btn a {
     visibility: hidden;
     font-size: 0;
     color: transparent;

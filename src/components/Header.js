@@ -5,7 +5,9 @@ import butterflyLogo from '../assets/logo/techcare_butterfly_logo.png';
 import '../styles/Header.css';
 
 
-export default function Header() {
+export default function Header({ openModal }) {
+
+
     return (
         <div className="header-section">
             <div className="container">
@@ -13,7 +15,7 @@ export default function Header() {
                     <div className="logo-container">
                         <img src={butterflyLogo} alt="Techcare" />
                     </div>
-                    <Navbar />
+                    <Navbar openModal={openModal} />
                 </div>
             </div>
         </div>

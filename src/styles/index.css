@@ -7,7 +7,7 @@
   --text: hsl(0, 0%, 0%);
   --light-text: hsl(0, 0%, 100%);
   --fade-text: hsla(0, 0%, 15%, 0.8);
-  --hover-text: hsla(0, 0%, 100%, 0.7);
+  --extra-light-text: hsla(0, 0%, 24%, 0.6);
   --element: hsl(0, 0%, 100%);
 }
 

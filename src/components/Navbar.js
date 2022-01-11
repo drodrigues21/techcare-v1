@@ -6,7 +6,7 @@ import usaFlag from '../assets/images/usa-flag.png';
 // import moon from '../assets/images/moon.svg';
 // import sun from '../assets/images/usa-flag.png';
 
-export default function Navbar() {
+export default function Navbar({ openModal }) {
 
     const handleToggle = () => {
         document.body.classList.toggle('nav-open');
@@ -28,13 +28,13 @@ export default function Navbar() {
                     <li className="link"><Link onClick={closeMobileNav} to="/">Principal</Link></li>
                     <li className="link"><Link onClick={closeMobileNav} to="/techcare">A TechCare</Link></li>
                     <li className="link"><Link onClick={closeMobileNav} to="/ourservices">Nossos Serviços</Link></li>
-                    <li className="link"><span>Contato</span></li>
+                    <li className="link"><Link onClick={openModal} to="#">Contato</Link></li>
                 </div>
                 <div className="languages">
-                    <div className="portugues">
+                    <div className="portugues" onClick={closeMobileNav}>
                         <img src={braFlag} alt="Bandeira Brasileira para portugues" />
                     </div>
-                    <div className="english">
+                    <div className="english" onClick={closeMobileNav}>
                         <img src={usaFlag} alt="USA flag for english" />
                     </div>
                     {/* <div className="darkmode">

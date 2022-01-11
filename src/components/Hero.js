@@ -1,14 +1,12 @@
 import React, { useEffect, useState } from 'react';
+import { Link } from "react-router-dom";
 
 import heroLogo from '../assets/logo/techcare_logo.png';
 import '../styles/Hero.css';
 
-export default function Hero() {
+export default function Hero({ openModal }) {
 
-    // const [contactBtn, setConstactBtn] = useState('Contato');
-    // const [heroBtn, setHeroBtn] = useState('');
-
-    function MyApp() {
+    function TrackScroll() {
 
         const [offset, setOffset] = useState(0);
 
@@ -32,7 +30,7 @@ export default function Hero() {
         }, [offset]);
     };
 
-    MyApp()
+    TrackScroll()
 
     return (
         <section className="hero-section">
@@ -43,9 +41,9 @@ export default function Hero() {
             </div>
             <div className="hero-contact-btn">
                 <div className="hero-contact-btn-container">
-                    <button className="hero-btn">
+                    <button onClick={openModal} className="hero-btn">
                         <svg xmlns="http://www.w3.org/2000/svg" className="ionicon" viewBox="0 0 512 512"><title>Mail</title><rect x="48" y="96" width="416" height="320" rx="40" ry="40" fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="32" /><path fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="32" d="M112 160l144 112 144-112" /></svg>
-                        <span>Contato</span>
+                        <Link to='#'>Contato</Link>
                     </button>
                 </div>
             </div>

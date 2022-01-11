@@ -1,0 +1,114 @@
+.form-container {
+    /* border: 2px solid red; */
+}
+
+.contact-form {
+    /* border: 2px solid rgb(25, 0, 255); */
+    margin: 4rem auto 0;
+}
+
+.form-title h2 {
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.form-title p {
+    font-size: .7rem;
+    font-weight: 300;
+    line-height: 1.35rem;
+    color: var(--fade-text);
+    margin: .25rem 0 2rem 0;
+}
+
+.input-container {
+    margin-bottom: 1.5rem;
+}
+
+.input-label {
+    color: var(--extra-light-text);
+    font-weight: 300;
+    margin: 0;
+    pointer-events: none;
+}
+
+.input-field {
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    padding: 0 0 5px 0;
+    border: none;
+    /* outline: 1px solid rgba(0, 0, 0, 0.25); */
+    border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+    /* border: 2px solid red; */
+}
+
+.input-field:focus  {
+    outline: none;
+    /* outline: 1px solid rgba(0, 0, 0, 0.95); */
+    border-bottom: 1px solid rgba(0, 0, 0, 1);
+}
+
+.messege-area {
+    height: 100px;
+    margin-bottom: 1rem;
+    overflow: hidden; 
+    overflow-wrap: break-word; 
+}
+
+.form-send-btn {
+    width: 100%;
+    height: 56px;
+    font-size: .9rem;
+    font-weight: 600;
+    letter-spacing: .75px;
+    text-align: center;
+    color: var(--light-text);
+    background-color: var(--accent);
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+    border: none;
+    border-radius: 28px;
+    box-shadow: 10px 16px 40px 0 hsla(24, 100%, 50%, 0.46);
+}
+
+.required-fields {
+    font-size: .75rem;
+    color: var(--extra-light-text);
+}
+
+.required-fields span {
+    color: rgb(195, 50, 50);
+}
+
+
+/* Tablet */
+@media screen and (min-width: 760px) {
+    .contact-form {
+        width: 470px;
+    }
+
+    .form-title h2 {
+        font-size: 2.35rem;
+    }
+    
+    .form-title p {
+        font-size: .825rem;
+    }
+
+    .input-container {
+        margin-bottom: 2rem;
+    }
+
+    .form-send-btn {
+        width: 196px;
+        height: 48px;
+        cursor: pointer;
+        margin-top: 1rem;
+    }
+
+    .required-fields {
+        font-size: .85rem;
+        margin: 2rem 0 0 6.25rem;
+    }
+}
+
