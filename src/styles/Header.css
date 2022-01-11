@@ -1,14 +1,8 @@
-/* Header Section */
-.header-section {
-    /* background-color: var(--primary); */
-}
-
 /* Header Container */
 .header-container {
     display: flex;
     justify-content: space-between;
     padding: 1rem 0;
-    
 }
 
 /* Logo Container */
@@ -25,8 +19,12 @@
 
     /* Header Container */
     .header-container {
-        padding: 1.25rem 0;
-        
+        padding-top: 2rem;
+    }
+
+    /* Logo Container */
+    .logo-container {
+        width: 40px;
     }
 
 }

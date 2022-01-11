@@ -1,6 +1,5 @@
 .hero-section {
-    height: 65vh;
-    padding: 2rem 0;
+    padding: 2rem 0 6rem;
 }
 
 .hero-container {
@@ -8,88 +7,149 @@
 }
 
 .hero-container img {
-    width: 7.5rem;
-    margin: 0 auto 1rem;
+    width: 8rem;
+    margin: 0 auto 2rem;
 }
 
 .hero-container h1 {
     font-size: 3.5rem;
-    font-weight: 300;
-    line-height: 4.5rem;
+    font-weight: 400;
+    line-height: 3.85rem;
     color: var(--light-text);
 }
 
 .hero-container h3 {
-    font-size: 1.25rem;
+    font-size: 1.15rem;
     font-weight: 300;
-    line-height: 3.75rem;
+    line-height: 3rem;
     color: var(--light-text);
 }
 
-.contact-us {
-    /* position: relative; */
-    width: 100%;
-    margin-top: 2rem;
+.hero-contact-btn {
+    position: relative;
+    height: 90px;
+    padding: 20px 0;
     text-align: center;
-    /* border: 2px solid red; */
 }
 
-.contact-us button {
+.hero-contact-btn-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+.hero-btn {
+    position: absolute;
+    bottom: calc(100vh - 70px);
+    left: calc(50% - 110px);
     width: 220px;
-    height: 47px;
+    height: 50px;
     font-size: .95rem;
     font-weight: 600;
     letter-spacing: 1.75px;
     text-transform: uppercase;
-    color: var(--primary);
+    color: var(--secondary);
     background-color: var(--element);
     border: none;
     border-radius: 25px;
-    transition: transform 500ms cubic-bezier(.5, 0, .5, 1);
+    /* margin: 0 auto; */
+    /* padding: 0; */
+    transition: all 500ms ease-in-out;
+    visibility: visible;
+    overflow: hidden;
+    transform: translateZ(0);
 }
 
-.contact-us button svg {
-    width: 30px;
-    color: rgb(255, 255, 255);
+.hero-btn svg {
+    visibility: hidden;
+    position: relative;
+    width: 0;
+    color: transparent;
+    transition: all .5s ease-in-out;
 }
 
-/* Contact Button Animation */
-/* .contact-us .move-on-scroll {
-    width: 62px;
-    height: 62px;
+.hero-btn span {
+    visibility: visible;
+    position: relative;
+    font-size: 12px;
+    color: var(--secondary);
+    transition: all .5s ease-in-out;
+}
+
+.hero-btn.round-btn{
     position: fixed;
-    bottom: 2rem;
-    right: 2rem;
-    border-radius: 50%;
+    z-index: 1;
+    bottom: 15px;
+    left: calc(100% - 75px);
+    width: 60px;
+    height: 60px;
+    padding: 18px 12px;
+    transition: all 500ms ease-in-out;
+    visibility: visible;
     background-color: var(--accent);
-    transform: translate(0);
-    transition: all 1000ms cubic-bezier(.5, 0, .5, 1);
-} */
+    border-radius: 50%;
+    transform: translateZ(0);
+}
 
-/* .scroll-on {
-    position: fixed;
-    
-} */
+.hero-btn.round-btn svg {
+    visibility: visible;
+    width: 26px;
+    color: #fff;
+    transition: all .5s ease-in-out;
+}
 
-/* Desktop */
+.hero-btn.round-btn span {
+    visibility: hidden;
+    font-size: 0;
+    color: transparent;
+    transition: all .5s ease-in-out;
+}
+
+/* Tablet */
 @media screen and (min-width: 800px) {
-    .hero-section {
-        height: 45vh;
-    }
-
     .hero-container img {
-        width: 8.5rem;
+        width: 9.5rem;
     }
     
     .hero-container h1 {
-        font-size: 4.5rem;
+        font-size: 4.75rem;
+        padding-bottom: 1rem;
     }
     
     .hero-container h3 {
-        font-size: 1.5rem;
+        font-size: 1.65rem;
+        padding-bottom: 1rem;
     }
 
-    .contact-us button {
+    .hero-btn {
+        cursor: pointer;
+    }
+}
+
+/* Desktop */
+@media screen and (min-width: 1100px) {
+
+    .hero-section {
+        padding-top: 5rem;
+    }
+
+    .hero-container img {
+        width: 11rem;
+    }
+    
+    .hero-container h1 {
+        font-size: 6.5rem;
+        padding-bottom: 2rem;
+    }
+    
+    .hero-container h3 {
+        letter-spacing: 1px;
+        padding-bottom: 2rem;
+    }
+
+    .hero-btn {
         cursor: pointer;
     }
 }

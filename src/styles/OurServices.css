@@ -58,6 +58,7 @@
     border: none;
     border-radius: 25px;
     cursor: pointer;
+    z-index: 10;
 }
 
 /* Tablet */
@@ -97,6 +98,10 @@
         padding: 48px;
     }
 
+    .card-info button {
+        cursor: pointer;
+    }
+
     .card-info h3 {
         font-size: 1.7rem;
     }
@@ -109,8 +114,8 @@
     }
 
     .card-container {
-        width: 940px;
-        height: 470px;
+        width: 900px;
+        height: 380px;
         display: flex;
         margin-bottom: 4rem;        
     }

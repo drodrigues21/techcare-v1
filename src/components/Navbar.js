@@ -12,9 +12,9 @@ export default function Navbar() {
         document.body.classList.toggle('nav-open');
     }
 
-    // const closeMobileNav = () => {
-    //     document.body.classList.remove('nav-open');
-    // }
+    const closeMobileNav = () => {
+        document.body.classList.remove('nav-open');
+    }
 
     return (
         <nav className='navbar-container'>
@@ -25,9 +25,9 @@ export default function Navbar() {
             </div>
             <ul className="links-container">
                 <div className='links'>
-                    <li className="link"><Link to="/">Principal</Link></li>
-                    <li className="link"><Link to="/techcare">A TechCare</Link></li>
-                    <li className="link"><Link to="/ourservices">Nossos Serviços</Link></li>
+                    <li className="link"><Link onClick={closeMobileNav} to="/">Principal</Link></li>
+                    <li className="link"><Link onClick={closeMobileNav} to="/techcare">A TechCare</Link></li>
+                    <li className="link"><Link onClick={closeMobileNav} to="/ourservices">Nossos Serviços</Link></li>
                     <li className="link"><span>Contato</span></li>
                 </div>
                 <div className="languages">
