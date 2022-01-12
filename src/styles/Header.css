@@ -1,4 +1,9 @@
-/* Header Container */
+/* Header Section */
+.header-section {
+    background-color: #02BCD9;
+}
+
+
 .header-container {
     display: flex;
     justify-content: space-between;
@@ -19,7 +24,7 @@
 
     /* Header Container */
     .header-container {
-        padding-top: 2rem;
+        padding: 2rem 0;
     }
 
     /* Logo Container */

@@ -27,8 +27,8 @@
 
 .hero-contact-btn {
     position: relative;
-    height: 90px;
-    padding: 20px 0;
+    height: 5.625rem;
+    padding: 3.25rem 0;
     text-align: center;
 }
 
@@ -54,12 +54,21 @@
     background-color: var(--element);
     border: none;
     border-radius: 25px;
-    /* margin: 0 auto; */
-    /* padding: 0; */
     transition: all 500ms ease-in-out;
     visibility: visible;
     overflow: hidden;
     transform: translateZ(0);
+}
+
+.hero-btn:hover {
+    background-color: var(--accent);
+    box-shadow: 7px 10px 5px 0 hsl(192, 100%, 11%);
+    transition: all 250ms ease-in-out;
+}
+
+.hero-btn:hover a {
+    color: var(--light-text);
+    transition: color 250ms ease-in-out;
 }
 
 .hero-btn svg {
@@ -79,32 +88,44 @@
 }
 
 .hero-btn.round-btn{
-    position: fixed;
-    z-index: 1;
-    bottom: 15px;
-    left: calc(100% - 75px);
     width: 60px;
     height: 60px;
-    padding: 18px 12px;
-    transition: all 500ms ease-in-out;
-    visibility: visible;
+    position: fixed;
+    bottom: 15px;
+    left: calc(100% - 75px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-color: var(--accent);
+    visibility: visible;
     border-radius: 50%;
     transform: translateZ(0);
+    transition: all 500ms ease-in-out;
+    
+}
+
+.hero-btn.round-btn:hover {
+    background-color: var(--light-text);
+    box-shadow: 0 5px 10px 0 hsla(24, 100%, 50%, 0.45);
 }
 
 .hero-btn.round-btn svg {
     visibility: visible;
     width: 26px;
-    color: #fff;
-    transition: all .5s ease-in-out;
+    color: var(--light-text);
+    transition: all 500ms ease-in-out;
+}
+
+.hero-btn.round-btn:hover svg {
+    color: var(--accent);
 }
 
 .hero-btn.round-btn a {
     visibility: hidden;
     font-size: 0;
     color: transparent;
-    transition: all .5s ease-in-out;
+    transition: all 500ms ease-in-out;
 }
 
 /* Tablet */

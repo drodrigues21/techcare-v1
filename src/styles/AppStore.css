@@ -37,3 +37,23 @@
 .apple-store img {
     padding: 1.2rem;
 }
+
+
+/* Tablet */
+@media screen and (min-width: 800px) {
+    .app-stores-container h2 {
+        font-size: 2.5rem;
+        margin-bottom: 3rem;
+    }
+
+}
+
+
+/* Desktop */
+@media screen and (min-width: 1000px) {
+    .app-stores-container h2 {
+        font-size: 2.75rem;
+        margin-bottom: 3.5rem;
+    }
+
+}

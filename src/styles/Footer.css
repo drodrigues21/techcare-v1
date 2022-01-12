@@ -1,0 +1,144 @@
+.footer-container {
+    color: var(--light-text);
+    background-color: var(--secondary);
+}
+
+.footer-container a:hover, 
+.social-media p a:hover  {
+    color: var(--accent);
+}
+
+.footer {
+    padding: 4rem 0 0;
+}
+
+.footer--contact-info {
+    padding-bottom: 4rem;
+}
+
+.footer--contact-info img {
+    width: 90px;
+    display: block;
+    margin-bottom: 1.5rem;
+}
+
+.footer--contact-info p {
+    font-weight: 600;
+}
+
+.footer--contact-info p a{
+    font-weight: 400;
+    color: var(--light-text);
+    padding-left: 1rem;
+}
+
+/* Footer Social Media */
+/* Terms of Services and Privacy Policy */
+
+.footer--media {
+    max-width: 320px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 4rem;
+}
+
+.footer--media .social-media a {
+    color: var(--light-text);
+}
+
+.terms-and-services h4, .social-media h4 {
+    /* font-size: 1.1rem; */
+    text-transform: uppercase;
+    padding-bottom: 1rem;
+}
+
+.privacy a, .terms a, .footer--media .social-media a {
+    font-size: .9rem;
+    font-weight: 400;
+    color: var(--light-text);
+}
+
+.footer--copyrights {
+    padding-bottom: 5rem;
+}
+
+.copyrights {
+    font-size: .8rem;
+    color: rgba(218, 218, 218, 0.65);
+}
+
+.developed {
+    font-size: .8rem;
+    color: rgba(218, 218, 218, 0.65);
+}
+
+.developed a {
+    color: rgb(223, 223, 223);
+    padding-left: .5rem;
+}
+
+/* Tablet */
+@media screen and (min-width: 800px) {
+    .footer {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .footer--media {
+        max-width: 350px;
+        flex-grow: 2;
+        align-items: center;
+    }
+
+    .terms-and-services {
+        padding-bottom: 0;
+    }
+}
+
+/* Desktop */
+@media screen and (min-width: 1100px) {
+
+    .footer-container {
+        padding: 2rem 0;
+    }
+
+    .footer--contact-info img {
+        width: 130px;
+        margin-bottom: 3rem;
+    }
+    
+    .footer--contact-info p {
+        font-size: 1.2rem;
+    }
+    
+     .footer--media {
+        max-width: 400px;
+        /* align-items: flex-end; */
+    }
+
+    .terms-and-services h4, .social-media h4 {
+        font-size: 1.3rem;
+        margin: 1rem 0 3.5rem 0;
+        padding: 0;
+    }
+    
+    .privacy a, .terms a, .footer--media .social-media a {
+        font-size: 1.2rem;
+        font-weight: 300;
+    }
+
+    .footer--copyrights {
+        padding: 2rem 0 0 0;
+    }
+    
+    .copyrights {
+        font-size: .9rem;
+        margin: 0;
+        color: rgba(218, 218, 218, 0.65);
+    }
+    
+    .developed {
+        font-size: .9rem;
+        margin: .2rem 0 0 0;
+    }
+}

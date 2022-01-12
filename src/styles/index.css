@@ -2,7 +2,7 @@
 :root {
   --bg: hsl(220, 43%, 97%);
   --primary: hsl(192, 100%, 17%);
-  --secondary: hsl(193, 100%, 8%);
+  --secondary: hsl(192, 100%, 11%);
   --accent: hsl(24, 100%, 50%);
   --text: hsl(0, 0%, 0%);
   --light-text: hsl(0, 0%, 100%);
@@ -25,11 +25,17 @@
   box-sizing: border-box;
 }
 
-body {
+html {
   margin: 0;
+  padding: 0;
+}
+
+body {
   font-family: 'Poppins', sans-serif;
   color: var(--text);
   background-color: var(--bg);
+  margin: 0;
+  padding: 0;
 }
 
 h1, h2, h3, h4 {
@@ -63,7 +69,7 @@ img {
 .backgound-container {
   position: relative;
   background: hsl(192, 100%, 11%);
-  background: linear-gradient(0deg, rgb(0, 45, 56) 10%, hsl(190, 99%, 29%) 80%, hsl(188, 98%, 43%) 100%);
+  background: linear-gradient(0deg, rgb(0, 45, 56) 12%, hsl(190, 99%, 29%) 70%, hsl(188, 98%, 43%) 97%);
 }
 
 .wave-bg {

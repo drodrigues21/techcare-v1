@@ -33,7 +33,7 @@ export default function Hero({ openModal }) {
     TrackScroll()
 
     return (
-        <section className="hero-section">
+        <section className="hero-section backgound-container">
             <div className="hero-container">
                 <img src={heroLogo} alt="TechCare, tecnologia do carinho" />
                 <h1>Ajuda a cuidar</h1>
