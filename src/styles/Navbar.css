@@ -1,8 +1,4 @@
 /* Navbar Section */
-.navbar-container {
-    /* padding: 0; */
-}
-
 /* Hamburger Menu */
 .menu-toggle {
     position: relative;
@@ -73,13 +69,13 @@
     width: 1.5rem;
     transform: rotate(-45deg);
     transition: transform 250ms ease-in;
-    background-color: var(--text);
+    background-color: var(--fade-text);
 }
 
 .nav-open .hamburger::after {
     transform: rotate(90deg) translateX(6px);
     transition: transform 250ms ease-in;
-    background-color: var(--text);
+    background-color: var(--fade-text);
 }
 
 .links .link {
@@ -99,39 +95,19 @@
     cursor: pointer;
 }
 
-/* Hover effect - navbar */
-.links .link a:hover, .links .link span:hover {
-    border-bottom: 2px solid var(--accent);
-}
-
-/* .links .link a:focus, .links .link span:focus {
-    border-bottom: 2px solid var(--accent);
-} */
-
-/* .active-link {
-    border-bottom: 2px solid var(--accent);
-} */
-
-.languages {
+.languages-container {
     display: flex;
     align-items: center;
     padding: 7rem 0 2rem 0;
 }
 
-.portugues, .english, .languages span {
-    font-size: .85rem;
-    color: var(--light-text);
+.language span {
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: var(--fade-text);
     padding: 0 .25rem;
-    cursor: pointer;
 }
-
-/* .portugues img, .english img {
-    width: 32px;
-} */
-
-/* .darkmode img {
-    width: 21px;
-} */
 
 /* Desktop */
 @media screen and (min-width: 900px) {
@@ -145,49 +121,101 @@
     }
 
     .links-container {
-        width: 100%;
-        height: 100%;
-        position: initial;
+        position: relative;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        margin: 0;
-        padding: 0;
         background-color: unset;
         transform: translateX(0);
-        transition: transform 600ms cubic-bezier(.5, 0, .5, 1);
+        transition: transform 300ms cubic-bezier(.5, 0, .5, 1);
     }
 
     .links {
+        /* position: relative; */
         display: flex;
         align-items: center;
         padding: 0 0 0 4rem;
+        transition: -webkit-clip-path 275ms ease;
+        transition: clip-path 275ms ease;
     }
 
     .links .link {
-        padding: 0 3rem 0 0;
+        position: relative;
+        padding: 0;
+        margin: 0 .75rem;
+    }
+
+    .links .link:hover a::before,
+    .links .link:hover span::before,
+    .links .link:focus a::before,
+    .links .link:focus span::before {
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+        border-bottom: 3px solid var(--accent);
     }
 
     .links .link a, .links .link span {
-        color: var(--light-text);
-        font-size: .75rem;
+        position: relative;
+        display: inline-block;
+        color: var(--fade-light-text);
+        font-size: .9rem;
         font-weight: 600;
+        letter-spacing: .05rem;
         text-transform: uppercase;
-        padding-bottom: 2px;
-    }
+        padding: 5px 10px;
+    }  
 
-    .languages {
+    .links .link a::before,
+    .links .link span::before {
+        position: absolute;
+        content: attr(data-content);
+        color: var(--light-text);
+        -webkit-clip-path: polygon(0 0, 0 0, 0% 100%, 0 100%);
+        clip-path: polygon(0 0, 0 0, 0% 100%, 0 100%);
+        transition: -webkit-clip-path 275ms ease;
+        transition: clip-path 275ms ease;
+    } 
+
+    .languages-container {
         display: flex;
         align-items: center;
         padding: 0;
     }
 
-    .portugues img, .english img {
-        width: 24px;
+    .languages-container span {
+        color: var(--light-text);
     }
-    
-    .darkmode img {
-        width: 18px;
+
+    .language {
+        position: relative;
+        transition: -webkit-clip-path 275ms ease;
+        transition: clip-path 275ms ease;
     }
+
+    .language:hover span::before, .language:focus span::before {
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+        border-bottom: 3px solid var(--accent);
+    }
+
+    .language span {
+        position: relative;
+        display: inline-block;
+        font-size: .9rem;
+        font-weight: 600;
+        color: var(--fade-light-text);
+        cursor: pointer;
+    }
+
+    .language span::before {
+        position: absolute;
+        content: attr(data-content);
+        color: var(--light-text);
+        -webkit-clip-path: polygon(0 0, 0 0, 0% 100%, 0 100%);
+        clip-path: polygon(0 0, 0 0, 0% 100%, 0 100%);
+        transition: -webkit-clip-path 275ms ease;
+        transition: clip-path 275ms ease;
+    }
+  
 }
 

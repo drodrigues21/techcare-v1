@@ -9,7 +9,7 @@ export default function Header({ openModal }) {
 
 
     return (
-        <div className="header-section">
+        <div className="header-section" id="home">
             <div className="container">
                 <div className="header-container">
                     <div className="logo-container">

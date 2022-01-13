@@ -1,6 +1,6 @@
 /* Header Section */
 .header-section {
-    background-color: #02BCD9;
+    background-color: var(--primary);
 }
 
 

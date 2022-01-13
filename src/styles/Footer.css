@@ -1,11 +1,6 @@
 .footer-container {
-    color: var(--light-text);
-    background-color: var(--secondary);
-}
-
-.footer-container a:hover, 
-.social-media p a:hover  {
-    color: var(--accent);
+    color: var(--fade-light-text);
+    background-color: var(--primary);
 }
 
 .footer {
@@ -84,6 +79,35 @@
         justify-content: space-between;
     }
 
+    .footer--contact-info p, .social-media p, .terms p {
+        position: relative;
+        transition: -webkit-clip-path 275ms ease;
+        transition: clip-path 275ms ease;
+    }
+
+    .footer--contact-info p:hover a::before, .footer--contact-info p:focus a::before,
+    .social-media p:hover a::before, .social-media p:focus a::before,
+    .terms p:hover a::before, .terms p:focus a::before {
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+        border-bottom: 3px solid var(--accent);
+    }
+
+    .footer--contact-info p a, .social-media p a, .terms p a {
+        position: relative;
+        display: inline-block;
+    }
+
+    .footer--contact-info p a::before, .social-media p a::before, .terms p a::before {
+        position: absolute;
+        content: attr(data-content);
+        color: var(--light-text);
+        -webkit-clip-path: polygon(0 0, 0 0, 0% 100%, 0 100%);
+        clip-path: polygon(0 0, 0 0, 0% 100%, 0 100%);
+        transition: -webkit-clip-path 275ms ease;
+        transition: clip-path 275ms ease;
+    }
+
     .footer--media {
         max-width: 350px;
         flex-grow: 2;
@@ -92,6 +116,10 @@
 
     .terms-and-services {
         padding-bottom: 0;
+    }
+
+    .developed a:hover {
+        color: var(--accent);
     }
 }
 

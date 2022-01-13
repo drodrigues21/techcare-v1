@@ -47,21 +47,19 @@ export default function Navbar({ openModal }) {
             </div>
             <ul className="links-container">
                 <div className='links'>
-                    <li className="link"><Link onClick={closeMobileNav} to="/">Principal</Link></li>
-                    <li className="link"><Link onClick={closeMobileNav} to="/techcare">A TechCare</Link></li>
-                    <li className="link"><Link onClick={closeMobileNav} to="/ourservices">Nossos Serviços</Link></li>
-                    <li className="link"><span onClick={openModal}>Contato</span></li>
+                    <li className="link"><Link data-content="principal" onClick={closeMobileNav} to="/">Principal</Link></li>
+                    <li className="link"><Link data-content="a techcare" onClick={closeMobileNav} to="/techcare">A TechCare</Link></li>
+                    <li className="link"><Link data-content="nossos serviços" onClick={closeMobileNav} to="/ourservices">Nossos Serviços</Link></li>
+                    <li className="link"><span data-content="contato" onClick={openModal}>Contato</span></li>
                 </div>
                 <SocialMedia />
-                <div className="languages">
-                    <div className="portugues" onClick={closeMobileNav}>
-                        POR
-                        {/* <img src={braFlag} alt="Bandeira Brasileira para portugues" /> */}
+                <div className="languages-container">
+                    <div className="language" onClick={closeMobileNav}>
+                        <span data-content="por">por</span>
                     </div>
                     <span>/</span>
-                    <div className="english" onClick={closeMobileNav}>
-                        ENG
-                        {/* <img src={usaFlag} alt="USA flag for english" /> */}
+                    <div className="language" onClick={closeMobileNav}>
+                        <span data-content="eng">eng</span>
                     </div>
                     {/* <div className="darkmode">
                         <img src={moon} alt="" />

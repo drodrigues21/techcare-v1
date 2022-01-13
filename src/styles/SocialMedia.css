@@ -1,24 +1,26 @@
 /* Navbar Social Media */
 .links-container .social-media {
     position: absolute;
-    bottom: 1.5rem;
-    right: 1.5rem;
+    bottom: 2rem;
+    right: 2rem;
     display: flex;
     flex-direction: column;
 }
 
 .links-container .social-media a {
-    padding: .25rem;
+    padding: .1rem;
 }
 
 .links-container .social-media a svg {
     width: 2rem;
-    fill: var(--fade-text);
 }
 
-.links-container .social-media a svg:hover {
-    fill: var(--accent);
+.links-container .social-media .youtube svg {
+    fill: #FF0000;
 }
+.links-container .social-media .facebook svg {
+    fill: #3B5999;
+} 
 
 /* Desktop */
 @media screen and (min-width: 900px) { 

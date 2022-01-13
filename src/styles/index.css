@@ -1,11 +1,12 @@
 /* Theme colors */
 :root {
   --bg: hsl(220, 43%, 97%);
-  --primary: hsl(192, 100%, 17%);
-  --secondary: hsl(192, 100%, 11%);
+  --primary: rgb(0, 45, 56);
+  --secondary: rgb(0, 78, 97);
   --accent: hsl(24, 100%, 50%);
-  --text: hsl(0, 0%, 0%);
+  --text: hsl(0, 0%, 15%);
   --light-text: hsl(0, 0%, 100%);
+  --fade-light-text: hsl(0, 0%, 96%);
   --fade-text: hsla(0, 0%, 15%, 0.8);
   --extra-light-text: hsla(0, 0%, 24%, 0.6);
   --element: hsl(0, 0%, 100%);
@@ -26,8 +27,7 @@
 }
 
 html {
-  margin: 0;
-  padding: 0;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -68,8 +68,9 @@ img {
 /* Header and Hero sections background */
 .backgound-container {
   position: relative;
-  background: hsl(192, 100%, 11%);
-  background: linear-gradient(0deg, rgb(0, 45, 56) 12%, hsl(190, 99%, 29%) 70%, hsl(188, 98%, 43%) 97%);
+  background: var(--primary);
+  /* background: linear-gradient(0deg, rgb(0, 45, 56) 12%, hsl(190, 99%, 29%) 70%, hsl(188, 98%, 43%) 97%); */
+  background: linear-gradient(0deg, rgba(29,169,172,1) 0%, rgba(18,113,127,1) 45%, rgba(0,45,56,1) 100%);
 }
 
 .wave-bg {
@@ -90,7 +91,7 @@ img {
 }
 
 .wave-bg .shape-fill {
-  fill: hsl(192, 100%, 11%);
+  fill: hsl(181, 72%, 39%);
 }
 
 /* Tablet */
