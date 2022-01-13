@@ -1,7 +1,7 @@
 /* Modal */
-/* body.modal-open {
+body.modal-open {
     overflow: hidden;
-} */
+}
 
 .modal-bg {
     position: fixed;
